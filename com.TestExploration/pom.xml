@@ -4,4 +4,51 @@
   <artifactId>com.TestExploration</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>TestExploration</name>
-</project>
+  
+  
+  <dependencies>
+  	<dependency>
+  			<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.11</version>
+            <scope>compile</scope>
+        </dependency>
+        <!-- https://www.seleniumhq.org/download/maven.jsp -->
+  		<dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.9.1</version>
+        </dependency>
+         <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        	<artifactId>selenium-server</artifactId>
+        	<version>3.9.1</version>
+    	</dependency> 
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-firefox-driver</artifactId>
+            <version>3.9.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>2.53.0</version>
+        </dependency>
+   		<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+        <dependency>
+            <groupId>com.relevantcodes</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>2.41.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+		<dependency>
+		    <groupId>log4j</groupId>
+		    <artifactId>log4j</artifactId>
+		    <version>1.2.17</version>
+		</dependency>
+        
+  </dependencies>
+  </project>
