@@ -27,12 +27,26 @@ public class TestClassesOforgopenqaselenium {
 		String EmailIdTagNamevalue = EmailIdTagName.getTagName();
 		System.out.println("The tag for Emaild field is:" + EmailIdTagNamevalue + " Tag");
 			
-			
+		
+		//Find the element using the link text. 
+		WebElement LearnMoreEle = mydriver.findElement(By.linkText("Learn more"));
+		String LearnMoreEleValue = LearnMoreEle.getText();
+		System.out.println("The text value for the hyperlink element found using the Link text is :" +LearnMoreEleValue);
+		
+		
+		//Find the element using the Partial link text. 
+		WebElement ParLearnMoreEle = mydriver.findElement(By.partialLinkText("Learn"));
+		String ParLearnMoreEleValue = ParLearnMoreEle.getText();
+		System.out.println("The text value for the hyperlink element found usign the partial link text is:" +ParLearnMoreEleValue);
+		
+		
+		//Find the element using the Xpath text. 
+		WebElement NextButton = mydriver.findElement(By.xpath(".//*[@id='identifierNext']/content"));
+		String NextButtonValue = NextButton.getText();
+		System.out.println("The text value for the NextButton found usign the Xpath is:" +NextButtonValue);
+
 		mydriver.close();
-		
-		
-		
-		
+
 	}
 
 }
